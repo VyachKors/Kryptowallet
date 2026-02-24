@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Криптокошелек – Простое открытие и использование</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <!-- Мета-тег SEO безопасности на период разработки/тестирования (Опционально) -->
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+
+<header>
+    <h1>Кошелек для криптовалюты: просто о главном</h1>
+    <p>
+        Откройте свой первый криптокошелек — быстро, удобно и безопасно.<br>
+        Пошаговые инструкции и советы по открытию и использованию.
+    </p>
+    <nav class="quick-nav" aria-label="Быстрая навигация">
+        <a href="#bybitwallet">🔹 ByBit</a>
+        <a href="#trustwallet">🔹 Trust Wallet</a>
+        <a href="#transfer">🔹 Переводы</a>
+        <a href="#withdraw">🔹 Вывод на карту</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Секция выбора варианта -->
+    <section id="wallets-selection">
+        <h2>Что выбрать: биржу или кошелек?</h2>
+        <div class="choice-columns" role="list">
+            <div class="choice" role="listitem">
+                <h3>💳 Биржа (ByBit)</h3>
+                <ul>
+                    <li>Покупка, продажа, быстрый обмен криптовалюты</li>
+                    <li>Простой ввод и вывод средств на банковские карты</li>
+                    <li>P2P и фиатные операции</li>
+                    <li>Подходит новичкам</li>
+                </ul>
+            </div>
+            <div class="choice" role="listitem">
+                <h3>💡 Кошелек (Trust Wallet)</h3>
+                <ul>
+                    <li>Долгосрочное хранение криптовалюты</li>
+                    <li>Высокий уровень приватности и самостоятельный контроль</li>
+                    <li>Использование DeFi-сервисов</li>
+                    <li>Для опытных пользователей</li>
+                </ul>
+            </div>
+        </div>
+        <aside class="tip" aria-live="polite">
+            <b>Совет:</b> Для ежедневных или частых операций удобно использовать биржу. Для надежного хранения крупных
+            сумм — лучше кошелек с закрытыми ключами у вас!
+        </aside>
+    </section>
+
+    <!-- ByBit: открытие кошелька, скриншоты на каждом шаге -->
+    <section id="bybitwallet">
+        <h2>Открытие кошелька на ByBit</h2>
+        <ol class="step-list">
+            <li>
+                Зарегистрируйтесь на сайте
+                <a href="https://www.bybit.com/invite?ref=4Q5EEDZ" target="_blank" rel="noopener">ByBit</a>
+                (потребуется email и пароль).
+                <input type="checkbox" id="bybit-step1-modal" class="modal-toggle" hidden>
+                <span class="screenshot-tooltip">
+                <label for="bybit-step1-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                <span class="screenshot-img">
+                    <img src="assets/images/bybit-step-1.png" alt="Скриншот регистрации аккаунта на ByBit">
+                </span>
+            </span>
+                <label for="bybit-step1-modal" class="modal-overlay"></label>
+                <div class="modal-popup">
+                    <label for="bybit-step1-modal" class="modal-close" tabindex="0" aria-label="Закрыть"></label>
+                    <img src="assets/images/bybit-step-1.png" alt="Скриншот регистрации аккаунта на ByBit">
+                </div>
+            </li>
+            <li>
+                Войдите в личный кабинет и пройдите процесс быстрой верификации (KYC) для разблокировки всех функций.
+                <input type="checkbox" id="bybit-step2-modal" class="modal-toggle" hidden>
+                <span class="screenshot-tooltip">
+                <label for="bybit-step2-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                <span class="screenshot-img">
+                    <img src="assets/images/bybit-step-2.png" alt="Скриншот KYC Bybit">
+                </span>
+            </span>
+                <label for="bybit-step2-modal" class="modal-overlay"></label>
+                <div class="modal-popup">
+                    <label for="bybit-step2-modal" class="modal-close" tabindex="0" aria-label="Закрыть"></label>
+
+                    <img src="assets/images/bybit-step-2.png" alt="Скриншот KYC Bybit">
+                </div>
+            </li>
+            <li>
+                В разделе <strong>Assets (Активы)</strong> выберите "Deposit"(Внести).
+                <input type="checkbox" id="bybit-step3-modal" class="modal-toggle" hidden>
+                <span class="screenshot-tooltip">
+                <label for="bybit-step3-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                <span class="screenshot-img">
+                    <img src="assets/images/bybit-step-3.png" alt="Скриншот раздела Депозит на ByBit">
+                </span>
+            </span>
+                <label for="bybit-step3-modal" class="modal-overlay"></label>
+                <div class="modal-popup">
+                    <label for="bybit-step3-modal" class="modal-close" tabindex="0" aria-label="Закрыть"></label>
+                    <img src="assets/images/bybit-step-3.png" alt="Скриншот раздела Депозит на ByBit">
+                </div>
+            </li>
+            <li>
+                Заполните поля монеты и сети. Скопируйте ваш уникальный депозитный адрес для пополнения криптовалютой.
+                <input type="checkbox" id="bybit-step4-modal" class="modal-toggle" hidden>
+                <span class="screenshot-tooltip">
+                <label for="bybit-step4-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                <span class="screenshot-img">
+                    <img src="assets/images/bybit-step-4.png" alt="Скриншот депозитного адреса на ByBit">
+                </span>
+            </span>
+                <label for="bybit-step4-modal" class="modal-overlay"></label>
+                <div class="modal-popup">
+                    <label for="bybit-step4-modal" class="modal-close" tabindex="0" aria-label="Закрыть"></label>
+                    <img src="assets/images/bybit-step-4.png" alt="Скриншот депозитного адреса на ByBit">
+                </div>
+            </li>
+        </ol>
+        <aside class="tip" aria-live="polite">
+            ByBit работает как кастодиальный кошелек (вы не контролируете приватные ключи напрямую).
+        </aside>
+    </section>
+
+    <!-- Trust Wallet -->
+    <section id="trustwallet">
+        <h2>Открытие криптокошелька в Trust Wallet</h2>
+        <ol class="step-list">
+            <li>Скачайте <strong>Trust Wallet</strong> из App Store или Google Play.</li>
+            <li>Откройте приложение и нажмите "Создать новый кошелек".</li>
+            <li>Примите условия использования (поставьте галочку).</li>
+            <li>Сохраните или запишите в безопасном месте секретную фразу (seed phrase). <strong>Никому не
+                демонстрируйте эту фразу!</strong></li>
+            <li>Подтвердите seed-фразу — расставьте слова в правильном порядке.</li>
+            <li>Поздравляем, ваш кошелек готов к использованию!</li>
+        </ol>
+        <aside class="tip" aria-live="polite">
+            Если вы теряете seed-фразу — восстановить кошелек невозможно!
+        </aside>
+    </section>
+
+    <!-- Переводы между пользователями -->
+    <section id="transfer" aria-labelledby="transfer-title">
+        <h2 id="transfer-title">Переводы между пользователями</h2>
+        <div class="flex">
+            <div class="card-instruction">
+                <h3>ByBit</h3>
+                <ol class="step-list">
+                    <li>
+                        Зайдите в "Assets" в личном кабинете ByBit.
+                        <input type="checkbox" id="bybit-transfer-step1-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-transfer-step1-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-transfer-step1.png" alt="Скриншот раздела Assets ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-transfer-step1-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-transfer-step1-modal" class="modal-close" ta
+
+
+                                   bindex="0" aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-transfer-step1.png" alt="Скриншот раздела Assets ByBit">
+                        </div>
+                    </li>
+                    <li>
+                        Выберите монету. Вставьте адрес получателя.
+                        <input type="checkbox" id="bybit-transfer-step2-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-transfer-step2-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-transfer-step2.png" alt="Скриншот выбора монеты для вывода">
+                        </span>
+                    </span>
+                        <label for="bybit-transfer-step2-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-transfer-step2-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-transfer-step2.png" alt="Скриншот выбора монеты для вывода">
+                        </div>
+                    </li>
+                    <li>
+                        Выберите сеть и сумму. Убедитесь что адрес и сеть совпадают с данными получателя! Подтвердите операцию.
+                        <input type="checkbox" id="bybit-transfer-step3-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-transfer-step3-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-transfer-step3.png" alt="Скриншот заполнения формы отправки">
+                        </span>
+                    </span>
+                        <label for="bybit-transfer-step3-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-transfer-step3-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-transfer-step3.png" alt="Скриншот заполнения формы отправки">
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="card-instruction">
+                <h3>Trust Wallet</h3>
+                <ol class="step-list">
+                    <li>Откройте приложение, выберите нужную валюту (например, USDT).</li>
+                    <li>Нажмите "Отправить".</li>
+                    <li>Введите адрес получателя(например, скопирован из его Trust Wallet).</li>
+                    <li>Укажите сумму, проверьте адрес, подтвердите перевод.</li>
+                </ol>
+            </div>
+        </div>
+        <aside class="tip" aria-live="polite">
+            Перед отправкой всегда проверяйте правильность адреса и выбранной сети!
+        </aside>
+    </section>
+
+    <!-- Вывод средств на банковскую карту с советами -->
+    <section id="withdraw" aria-labelledby="withdraw-title">
+        <h2 id="withdraw-title">Вывод средств на банковскую карту</h2>
+        <div class="flex">
+            <div class="card-instruction">
+                <h3>ByBit</h3>
+                <ol class="step-list">
+                    <li>
+                        Подготовка: Убедитесь, что прошли KYC-верификацию.
+                        <input type="checkbox" id="bybit-withdraw-step1-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step1-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step1.png" alt="KYC ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step1-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label
+                                    for="bybit-withdraw-step1-modal" class="modal-close" tabindex="0"
+                                    aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step1.png" alt="KYC ByBit">
+                        </div>
+                    </li>
+                    <li>
+                        Перевод активов: Переведите USDT или другую валюту с «Единого торгового» аккаунта на аккаунт
+                        «Финансирование» через меню «Активы» → «Перевести».
+                        <input type="checkbox" id="bybit-withdraw-step2-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step2-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step2.png"
+                                 alt="Перевод на аккаунт финансирования ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step2-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step2-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step2.png"
+                                 alt="Перевод на аккаунт финансирования ByBit">
+                        </div>
+                    </li>
+                    <li>
+                        Переход в P2P: Перейдите в раздел «Купить криптовалюту» → «P2P-торговля».
+                        <input type="checkbox" id="bybit-withdraw-step3-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step3-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step3.png" alt="Скриншот P2P ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step3-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step3-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step3.png" alt="Скриншот P2P ByBit">
+                        </div>
+                    </li>
+                    <li>
+                        Создание ордера: Выберите вкладку «Продажа» и валюту (например, RUB).
+                        <input type="checkbox" id="bybit-withdraw-step4-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step4-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step4.png"
+                                 alt="Выбор вкладки Продажа и валюты RUB ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step4-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step4-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step4.png"
+                                 alt="Выбор вкладки Продажа и валюты RUB ByBit">
+                        </div>
+                    </li>
+                    <li>
+                        Выбор покупателя: Отфильтруйте по нужному банку (Сбербанк, Тинькофф/Т-Банк, СБП и др.), выберите
+                        курс и лимиты.
+                        <input type="checkbox" id="bybit-withdraw-step5-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step5-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step5.png" alt="Выбор покупателя для P2P ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step5-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step5-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step5.png" alt="Выбор покупателя для P2P ByBit">
+                        </div>
+                    </li>
+                    <li>
+                        Продажа: Нажмите «Продать», укажите сумму и выберите способ оплаты "Bank Transfer" или "Cash Deposit to Bank".
+                        <input type="checkbox" id="bybit-withdraw-step6-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step6-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step6.png" alt="Продажа и ввод реквизитов на ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step6-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step6-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step6.png" alt="Продажа и ввод реквизитов на ByBit">
+                        </div>
+                    </li>
+                    <li>
+                       Заполните данные для перевода.
+                        <input type="checkbox" id="bybit-withdraw-step7-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step7-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step7.png" alt="Продажа и ввод реквизитов на ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step7-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step7-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step6.png" alt="Продажа и ввод реквизитов на ByBit">
+                        </div>
+                    </li>
+                    <li>
+                        Получение денег: Дождитесь поступления средств на вашу карту.
+                        <input type="checkbox" id="bybit-withdraw-step8-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step8-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/screens/bybit-withdraw-step8.png" alt="Получение денег на карту">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step8-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step8-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step8.png" alt="Получение денег на карту">
+                        </div>
+                    </li>
+                    <li>
+                        Подтверждение: После проверки поступления денег, нажмите «Перевести» для подтверждения отправки
+                        криптовалюты покупателю.
+                        <input type="checkbox" id="bybit-withdraw-step9-modal" class="modal-toggle" hidden>
+                        <span class="screenshot-tooltip">
+                        <label for="bybit-withdraw-step9-modal" class="screenshot-link" tabindex="0">Скриншот</label>
+                        <span class="screenshot-img">
+                            <img src="assets/images/bybit-withdraw-step9.png" alt="Перевести для подтверждения ByBit">
+                        </span>
+                    </span>
+                        <label for="bybit-withdraw-step9-modal" class="modal-overlay"></label>
+                        <div class="modal-popup">
+                            <label for="bybit-withdraw-step9-modal" class="modal-close" tabindex="0"
+                                   aria-label="Закрыть"></label>
+                            <img src="assets/images/bybit-withdraw-step9.png" alt="Перевести для подтверждения ByBit">
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="card-instruction">
+                <h3>Trust Wallet</h3>
+                <ol class="step-list">
+                    <li>В большинстве случаев требуется перевести криптовалюту на биржу (например,
+                        ByBit, Binance).
+                    </li>
+                    <li>Используйте функцию "Отправить" — введите адрес для депозита биржи.</li>
+                    <li>На бирже выберите "Продать" (Sell), выберите P2P-сервис или прямой вывод на карту.</li>
+                    <li>Следуйте инструкциям биржи: выберите банк, сумму и подтвердите операцию.</li>
+                </ol>
+            </div>
+        </div>
+        <aside class="tip" aria-live="polite">
+            <div class="withdraw-important-tips">
+                <div class="withdraw-important-tips-title">Важные советы:</div>
+                <ul>
+                    <li><b>Безопасность:</b> Не подтверждайте получение средств, пока реально не увидите их на балансе
+                        банковского приложения.
+                    </li>
+                    <li><b>Сеть:</b> При переводе между кошельками используйте правильную сеть (например TRC-20 для USDT).
+                    </li>
+                    <li><b>Альтернатива:</b> Для некоторых валют доступен прямой вывод фиата в разделе «Активы» →
+                        «Финансирование» → «Вывести».
+                    </li>
+                    <li><b>Комиссии:</b> P2P-платформа обычно не взимает комиссию с продавца криптовалюты.</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2024 Kryptowallet. Все права защищены.<br>
+    <span class="disclaimer">
+        Информация на сайте носит исключительно ознакомительный характер и не является финансовой или инвестиционной рекомендацией. Работа с криптовалютами и криптокошельками связана с высокими рисками, включая возможную потерю средств, кражу, мошенничество и утрату доступа к активам. Перед совершением любых операций рекомендуем проконсультироваться с независимым специалистом, соблюдать меры безопасности и учитывать актуальное законодательство вашей страны. Администрация сайта не несёт ответственности за возможные убытки и последствия, возникшие при использовании размещённой информации.
+    </span>
+</footer>
+
+
+</body>
+</html>

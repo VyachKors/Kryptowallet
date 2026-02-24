@@ -1,0 +1,413 @@
+/* === ФОНТОВЫЕ ПОДКЛЮЧЕНИЯ === */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* === ОСНОВНОЙ BODY === */
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #f6f8fa;
+    color: #222;
+}
+
+/* === HEADER === */
+header {
+    background: linear-gradient(90deg, #4e8dfa, #46e9b6 90%);
+    padding: 40px 0 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2.6em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.15em;
+    opacity: 0.9;
+}
+
+/* === QUICK NAVIGATION === */
+.quick-nav {
+    margin: 24px 0;
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quick-nav a {
+    color: #fff;
+    background: rgba(46, 80, 127, 0.12);
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: background 0.18s, color 0.18s;
+}
+.quick-nav a:hover {
+    background: #eaf0fb;
+    color: #4e8dfa;
+}
+
+/* === MAIN SECTIONS === */
+section {
+    max-width: 940px;
+    margin: -50px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(46, 80, 127, 0.09);
+    padding: 45px 30px;
+    position: relative;
+    z-index: 2;
+}
+section h2 {
+    text-align: center;
+    color: #2b2e3a;
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+/* === MAIN BUTTON === */
+.btn-main {
+    margin-top: 25px;
+    background: #fff;
+    color: #4e8dfa;
+    border: none;
+    padding: 16px 38px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.07em;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(78, 141, 250, 0.15);
+    transition: background 0.2s, color 0.2s;
+}
+.btn-main:hover {
+    background: #eaf0fb;
+    color: #2b2e3a;
+}
+
+/* === FLEX SECTION LAYOUT === */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 35px;
+}
+
+/* === CHOICE BLOCK (WALLET/BYBIT) === */
+.choice-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 18px 0 0 0;
+    justify-content: center;
+}
+.choice {
+    background: #f6f8fc;
+    border-radius: 11px;
+    box-shadow: 0 2px 14px rgba(46, 100, 220, 0.07);
+    flex: 1 1 260px;
+    min-width: 220px;
+    padding: 20px 27px;
+    border-top: 4px solid #4e8dfa33;
+}
+.choice h3 {
+    margin-top: 0;
+    font-size: 1.13em;
+    color: #2498c8;
+    margin-bottom: 0.5em;
+}
+.choice ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.99em;
+}
+.choice ul li {
+    margin-bottom: 9px;
+    line-height: 1.5;
+}
+
+/* === INSTRUCTION CARDS === */
+.card-instruction {
+    background: #f6f8fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(78, 141, 250, 0.06);
+    flex: 1 1 240px;
+    min-width: 220px;
+    padding: 22px 28px 18px 18px;
+    margin-bottom: 0;
+}
+.card-instruction h3 {
+    margin-top: 0;
+    color: #2498c8;
+    font-size: 1.13em;
+    margin-bottom: 0.6em;
+}
+.card-instruction ol {
+    margin: 0 0 0 -8px;
+    padding-left: 20px;
+}
+
+/* === STEP LIST === */
+.step-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    counter-reset: steps;
+}
+.step-list li {
+    background: #eaf0fb;
+    margin-bottom: 12px;
+    padding: 16px 15px 16px 42px;
+    border-radius: 7px;
+    position: relative;
+    font-size: 1.08em;
+}
+.step-list li:before {
+    counter-increment: steps;
+    content: counter(steps);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform:translateY(-50%);
+    background: #4e8dfa;
+    color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 1em;
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(46, 80, 127, 0.09);
+}
+
+/* === TOOLTIP-СКРИНШОТ === */
+.screenshot-tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.screenshot-link {
+    color: #4e8dfa;
+    text-decoration: underline dotted;
+    cursor: pointer;
+    font-size: 0.97em;
+    font-weight: 600;
+    outline: none;
+}
+.screenshot-img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1.5px solid #dbeafe;
+    box-shadow: 0 8px 24px rgba(46, 80, 127, 0.16);
+    border-radius: 8px;
+    padding: 7px 7px 3px 7px;
+    z-index: 25;
+    min-width: 140px;
+    max-width: 290px;
+}
+.screenshot-img img {
+    display: block;
+    max-width: 240px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+}
+/* tooltip при hover/focus */
+.screenshot-tooltip:hover .screenshot-img,
+.screenshot-link:focus + .screenshot-img {
+    display: block;
+}
+
+/* === MODAL: ОВЕРЛЕЙ И КАРТИНКА === */
+.modal-toggle ~ .modal-overlay,
+.modal-toggle:checked ~ .modal-overlay {
+    display: none;
+}
+.modal-toggle:checked ~ .modal-overlay {
+    display: block;
+    position: fixed;
+    z-index: 1100;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(22,30,38,0.58);
+    cursor: pointer;
+    animation: modalfadein 0.22s;
+}
+@keyframes modalfadein { from {opacity:0} to {opacity:1} }
+.modal-popup {
+    display: none;
+}
+.modal-toggle:checked ~ .modal-popup {
+    display: block;
+    position: fixed;
+    z-index: 1120;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 13px;
+    box-shadow: 0 12px 46px rgba(46, 80, 127, 0.24);
+    padding: 26px 22px 20px 22px;
+    animation: modalpopup 0.18s;
+    min-width: 0;
+}
+@keyframes modalpopup {
+    from {opacity:0; transform:translate(-50%,-43%);}
+    to {opacity:1; transform:translate(-50%,-50%);}
+}
+.modal-popup img {
+    max-width: 88vw;
+    max-height: 65vh;
+    border-radius: 7px;
+    display: block;
+}
+.modal-close {
+    position: absolute;
+    top: 11px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.modal-close:before, .modal-close:after {
+    content: '';
+    position: absolute;
+    left: 13px;
+    top: 6px;
+    width: 3px;
+    height: 16px;
+    background: #4e8dfa;
+    border-radius: 2px;
+}
+.modal-close:before {
+    transform: rotate(45deg);
+}
+.modal-close:after {
+    transform: rotate(-45deg);
+}
+
+/* === ASIDE (TIP/ СОВЕТЫ) === */
+aside.tip {
+    margin: 27px 0 12px 0;
+    padding: 14px 19px;
+    background: #fffbdf;
+    color: #927300;
+    border-left: 6px solid #ffe066;
+    border-radius: 7px;
+    font-size: 1em;
+    font-style: italic;
+}
+
+/* === IMPORTANT-TIPS (вывод внутри блока ByBit) === */
+.withdraw-important-tips {
+    margin: 23px 0 5px 0;
+    background: #fff7d2;
+    border-left: 5px solid #ffd966;
+    border-radius: 7px;
+    box-shadow: 0 2px 18px rgba(220,180,46,0.10);
+    padding: 17px 20px 14px 22px;
+    color: #665200;
+    font-size: 1em;
+}
+.withdraw-important-tips-title {
+    font-weight: 700;
+    color: #a88600;
+    margin-bottom: 9px;
+    font-size: 1.08em;
+    letter-spacing: .5px;
+}
+.withdraw-important-tips ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.98em;
+}
+.withdraw-important-tips li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 28px 12px 18px 12px;
+    font-size: 1em;
+    background: #eaf0fb;
+    color: #888;
+    border-radius: 0 0 16px 16px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    position: relative;
+}
+footer .disclaimer {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.92em;
+    color: #a13c2f;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* === ADAPTIVE / RESPONSIVE DESIGN === */
+@media (max-width: 900px) {
+    section {
+        padding: 30px 10vw;
+    }
+}
+@media (max-width: 700px) {
+section {
+    padding: 22px 3vw;
+    margin: 24px auto 0 auto;
+}
+.flex, .choice-columns {
+    flex-direction: column;
+    gap: 16px;
+}
+.card-instruction, .choice {
+    padding: 17px 6vw;
+}
+section h2 {
+    font-size: 1.35em;
+}
+.modal-popup {
+    padding: 13px 6px 12px 6px;
+    max-width: 96vw;
+    min-width: 0;
+}
+.modal-popup img {
+    max-width: 95vw;
+    max-height: 34vh;
+}
+.screenshot-img {
+    min-width: 70px;
+    max-width: 90vw;
+}
+.screenshot-img img {
+    max-width: 85vw;
+    max-height: 100px;
+}
+}
